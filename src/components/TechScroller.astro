@@ -11,23 +11,19 @@ const skills = [
 ];
 ---
 
-<div class="fixed right-8 top-1/2 -translate-y-1/2 h-96 overflow-y-auto space-y-6 p-4 bg-white/10 backdrop-blur-sm rounded-xl">
+<div class="fixed bottom-8 left-1/2 -translate-x-1/2 w-96 overflow-x-auto space-x-6 p-4 bg-white/10 backdrop-blur-sm rounded-xl">
   {skills.map((skill) => (
     <div 
-      class="flex flex-col items-center gap-2 transition-transform hover:scale-110"
+      class="inline-flex flex-col items-center gap-2 transition-transform hover:scale-110"
       style={`color: ${skill.color};`}
     >
       <div class="w-12 h-12 flex items-center justify-center text-2xl font-bold border-2 rounded-lg" style={`border-color: ${skill.color};`}>
         {skill.name.charAt(0)}
       </div>
-      <span class="text-sm font-medium writing-mode-vertical">{skill.name}</span>
+      <span class="text-sm font-medium">{skill.name}</span>
     </div>
   ))}
 </div>
 
 <style>
-  .writing-mode-vertical {
-    writing-mode: vertical-rl;
-    text-orientation: mixed;
-  }
 </style>
