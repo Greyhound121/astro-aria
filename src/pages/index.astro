@@ -4,6 +4,8 @@ import Projects from "../components/home/projects.astro";
 import Separator from "../components/home/separator.astro";
 import Writings from "../components/home/writings.astro";
 import Layout from "../layouts/main.astro";
+import SkillsScroll from "../components/SkillsScroll.astro";
+import { skills } from "../data/skills";
 ---
 
 <Layout title="Kai">
@@ -67,6 +69,10 @@ import Layout from "../layouts/main.astro";
         </div>
       </div>
     </div>
+  </div>
+
+  <div class="mt-16 md:mt-24">
+    <SkillsScroll skills={skills} />
   </div>
 
   <Separator text="Check out my projects" />

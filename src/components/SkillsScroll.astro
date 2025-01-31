@@ -1,0 +1,57 @@
+---
+interface Props {
+  skills: Array<{ name: string; icon: string }>;
+}
+
+const { skills } = Astro.props;
+---
+
+<div class="relative w-full max-w-[100vw] overflow-hidden group">
+  {/* Fade effect on sides */}
+  <div class="absolute inset-y-0 left-0 w-24 bg-gradient-to-r from-neutral-100 dark:from-neutral-900 z-20"></div>
+  <div class="absolute inset-y-0 right-0 w-24 bg-gradient-to-l from-neutral-100 dark:from-neutral-900 z-20"></div>
+
+  {/* Scroll container */}
+  <div class="inline-flex w-max animate-scroll group-hover:[animation-play-state:paused]">
+    {/* Double the items for seamless loop */}
+    <div class="flex items-center gap-12 px-4 py-8">
+      {[...skills, ...skills].map((skill) => (
+        <div class="flex flex-col items-center gap-4 transition-transform duration-300 hover:scale-110">
+          <div
+            class={`w-16 h-16 ${skill.icon} bg-contain bg-center bg-no-repeat dark:invert`}
+            role="img"
+            aria-label={skill.name}
+          />
+          <span class="text-sm font-medium text-neutral-600 dark:text-neutral-400">
+            {skill.name}
+          </span>
+        </div>
+      ))}
+    </div>
+  </div>
+</div>
+
+<style is:global>
+  @keyframes scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+
+  .animate-scroll {
+    animation: scroll 20s linear infinite;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .animate-scroll {
+      animation: scroll 40s linear infinite;
+    }
+  }
+
+  .dark .dark\:invert {
+    filter: invert(1);
+  }
+</style>
