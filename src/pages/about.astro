@@ -1,6 +1,8 @@
 ---
-import experiences from "../collections/experiences.json";
+import { experiences } from "../data/experiences";
 import AboutExperience from "../components/about-experience.astro";
+import AboutEducation from "../components/about-education.astro";
+import { education } from "../data/education";
 import PageHeading from "../components/page-heading.astro";
 import Layout from "../layouts/main.astro";
 ---
@@ -41,6 +43,21 @@ import Layout from "../layouts/main.astro";
             </div>
           )
         })
+      }
+    </div>
+
+    <h2
+      class="mt-5 mb-2 text-2xl font-bold lg:mt-10 sm:mt-6 dark:text-neutral-200"
+    >
+      Education
+    </h2>
+    <div class="px-5 py-10">
+      {
+        education.map((edu) => (
+          <div class="pb-10 border-l border-gray-200 last:border-l-0 dark:border-neutral-700">
+            <AboutEducation {...edu} />
+          </div>
+        ))
       }
     </div>
 
