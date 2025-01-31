@@ -7,3 +7,15 @@ export default {
 	},
 	plugins: [require("@tailwindcss/typography")],
 };
+
+// tailwind.config.js
+module.exports = {
+	// ... other config
+	theme: {
+		extend: {
+			animation: {
+				scroll: 'scroll 20s linear infinite',
+			},
+		},
+	},
+}

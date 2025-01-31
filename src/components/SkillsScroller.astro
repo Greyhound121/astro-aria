@@ -1,0 +1,40 @@
+---
+// SkillsScroller.astro
+const skills = [
+  { name: "JavaScript", icon: "/path/to/js-icon.svg" },
+  { name: "React", icon: "/path/to/react-icon.svg" },
+  { name: "Vue", icon: "/path/to/vue-icon.svg" },
+  // Add more skills as needed
+];
+---
+
+<div class="relative overflow-hidden h-[300px] w-full">
+  <div
+    class="absolute inset-0 bg-gradient-to-t from-white via-transparent to-white dark:from-gray-900 dark:to-gray-900 z-10"
+  >
+  </div>
+  <div class="animate-scroll">
+    {
+      skills.map((skill) => (
+        <div class="flex items-center space-x-4 mb-4">
+          <img src={skill.icon} alt={skill.name} class="w-8 h-8" />
+          <span>{skill.name}</span>
+        </div>
+      ))
+    }
+  </div>
+</div>
+
+<style>
+  @keyframes scroll {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-50%);
+    }
+  }
+  .animate-scroll {
+    animation: scroll 20s linear infinite;
+  }
+</style>
