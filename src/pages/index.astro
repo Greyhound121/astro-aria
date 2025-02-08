@@ -1,6 +1,5 @@
 ---
 import Button from "../components/button.astro";
-import Projects from "../components/home/projects.astro";
 import Separator from "../components/home/separator.astro";
 import Layout from "../layouts/main.astro";
 import SkillsScroll from "../components/SkillsScroll.astro";
@@ -19,9 +18,12 @@ import { skills } from "../data/skills";
           Hello, I'm Pete.
         </h1>
         <p class="mb-6 text-base text-neutral-600 dark:text-neutral-400">
-          I'm a full stack web developer living in Kamloops. <br
-            class="hidden lg:block"
-          />Learning to Code - One line at a time. 🖋️✨🚀
+          Full-stack developer with 6+ years of experience
+          building dynamic web applications and data-driven solutions. Based in
+          Kamloops, I specialize in creating robust, scalable, and user-friendly
+          digital experiences 
+          <!-- <br class="hidden lg:block" />Learning to Code -
+          One line at a time. 🖋️✨🚀 -->
         </p>
         <p class="mb-2 font-semibold text-neutral-800 dark:text-neutral-200">
           I can help you out with:
@@ -35,7 +37,7 @@ import { skills } from "../data/skills";
           <li>Web Analytics & Optimization</li>
           <li>and more...</li>
         </ul>
-        <Button text="Follow me on 𝕏" link="https://x.com/0xKaiBi" />
+        
       </div>
       <div
         class="relative justify-end hidden w-full mt-10 md:flex md:pl-10 md:w-1/2 md:mt-0 md:translate-y-4 xl:translate-y-0"
@@ -73,7 +75,4 @@ import { skills } from "../data/skills";
   <div class="w-full max-w-4xl mx-auto mt-16 px-7 md:mt-24 xl:px-0">
     <SkillsScroll skills={skills} />
   </div>
-
-  <Separator text="Check out my projects" />
-  <Projects />
 </Layout>

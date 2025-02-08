@@ -1,17 +1,16 @@
 export const education = [
   {
-    logo: "bg-[url('/assets/images/education/tru.png')]",
+    logo: "/assets/images/education/tru.ico",
     dates: "Dec 2021",
     degree: "Graduate Diploma in Business Administration",
     university: "Thompson Rivers University",
     gpa: "3.72/4"
   },
   {
-    logo: "bg-[url('/assets/images/education/christ-university-logo.png')]",
+    logo: "/assets/images/education/christ-unviersity-logo.png",
     dates: "April 2017",
     degree: "Bachelor in Computer Application",
     university: "Christ University",
     gpa: "3.3/4"
   }
-] as const;
 ] as const;

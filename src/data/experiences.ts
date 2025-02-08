@@ -2,22 +2,23 @@ export const experiences = [
   {
     logo: "/assets/images/experiences/fta.ico",
     dates: "2022 - Present",
-    role: "Frontend Engineer",
-    company: "FTA",
-    description: "Working on the company's main product, a web-based platform for managing and analyzing data."
+    role: "Freelancer",
+    
+    description: "Provided consulting and development services for clients, creating tailored solutions for their specific business needs."
   },
   {
-    logo: "/assets/images/experiences/wulian.ico",
-    dates: "2021 - 2022",
-    role: "Frontend Engineer",
-    company: "Wulian",
-    description: "Developed and maintained multiple web applications using Vue.js and React."
+    logo: "/assets/images/experiences/hsbc.ico",
+    dates: "2019 - 2020",
+    role: "Full Stack Developer - Wealth Management",
+      company: "HSBC Holdings plc.	",
+    description: "Developed and maintained multiple applications for wealth management."
   },
   {
-    logo: "/assets/images/experiences/yoho.ico",
-    dates: "2020 - 2021",
-    role: "Frontend Engineer",
-    company: "Yoho",
-    description: "Built and optimized e-commerce web applications using modern web technologies."
+    logo: "/assets/images/experiences/Axis.ico",
+    dates: "2017 - 2019",
+    role: "Software Developer - Digital Banking",
+    company: "Axis Bank Ltd.",
+    description: "Integrated and enhanced web applications for cross-border money transfers"
+
   }
 ] as const;

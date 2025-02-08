@@ -12,16 +12,12 @@ export const skills = [
     icon: "bg-[url('https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg')]"
   },
   {
-    name: "TypeScript",
-    icon: "bg-[url('https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg')]"
-  },
-  {
     name: "React",
     icon: "bg-[url('https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg')]"
   },
   {
-    name: "Node.js",
-    icon: "bg-[url('https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg')]"
+    name: "PHP",
+    icon: "bg-[url('https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg')]"
   },
   {
     name: "Git",
