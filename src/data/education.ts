@@ -9,7 +9,7 @@ export const education = [
   {
     logo: "/assets/images/education/christ-unviersity-logo.png",
     dates: "April 2017",
-    degree: "Bachelor in Computer Application",
+    degree: "Bachelor's degree in Computer Applications	",
     university: "Christ University",
     gpa: "3.3/4"
   }

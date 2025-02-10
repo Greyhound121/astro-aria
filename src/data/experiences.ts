@@ -8,9 +8,10 @@ interface Experience {
 
 export const experiences: Experience[] = [
   {
-    logo: "/assets/images/experiences/fta.ico",
+    logo: "/assets/images/experiences/d.ico",
     dates: "2022 - Present",
     role: "Freelancer",
+    company: "Digitronics",
     description: "Provided consulting and development services for clients, creating tailored solutions for their specific business needs."
   },
   {
@@ -18,13 +19,20 @@ export const experiences: Experience[] = [
     dates: "2019 - 2020",
     role: "Full Stack Developer - Wealth Management",
     company: "HSBC Holdings plc.",
-    description: "Developed and maintained multiple applications for wealth management."
+    description: "Spearheaded web development projects focusing on data visualization for wealth management division."
   },
   {
     logo: "/assets/images/experiences/Axis.ico",
     dates: "2017 - 2019",
     role: "Software Developer - Digital Banking",
     company: "Axis Bank Ltd.",
-    description: "Integrated and enhanced web applications for cross-border money transfers"
+    description: "Integrated and optimized high-performance web applications for secure cross-border financial transactions."
+  },
+  {
+    logo: "/assets/images/experiences/t.ico",
+    dates: "2016 - 2017",
+    role: "Content Developer & WordPress Specialist",
+    company: "Techdroid",
+    description: "Architected and scaled a high-performance WordPress platform."
   }
 ] as const;
